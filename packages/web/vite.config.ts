@@ -35,7 +35,7 @@ export default defineConfig({
     host: "0.0.0.0",
     proxy: {
       "/ws": {
-        target: "http://localhost:3001",
+        target: process.env.WS_TARGET || "http://localhost:3001",
         ws: true,
       },
     },

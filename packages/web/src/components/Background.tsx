@@ -1,4 +1,3 @@
-import logo from "@razzia/web/assets/logo.svg"
 import GithubIcon from "@razzia/web/components/GithubIcon"
 import type { PropsWithChildren } from "react"
 
@@ -9,7 +8,12 @@ const Background = ({ children }: PropsWithChildren) => (
       <div className="bg-primary/15 absolute right-[-10vmin] bottom-[-45vmin] min-h-[75vmin] min-w-[75vmin] rotate-20 rounded-4xl" />
     </div>
 
-    <img src={logo} className="mb-10 h-16" alt="logo" />
+    <div className="mb-10 flex flex-col items-center gap-3">
+      <img src="/icon-bee.png" className="size-16" alt="BlueHoot bee" />
+      <h1 className="font-display text-6xl font-bold tracking-tight text-[#0f62fe]">
+        BlueHoot
+      </h1>
+    </div>
     {children}
 
     <a
