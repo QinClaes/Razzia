@@ -13,12 +13,11 @@ import Wait from "@razzia/web/features/game/components/states/Wait"
 
 import { STATUS } from "@razzia/common/types/game/status"
 
-// IBM Carbon Design System categorical palette (first four sequence colors)
 export const ANSWERS_COLORS = [
-  "bg-[#6929c4] text-white", // Purple 70
-  "bg-[#1192e8] text-white", // Cyan 50
-  "bg-[#005d5d] text-white", // Teal 70
-  "bg-[#9f1853] text-white", // Magenta 70
+  "bg-[var(--color-answer-1)] text-white",
+  "bg-[var(--color-answer-2)] text-white",
+  "bg-[var(--color-answer-3)] text-white",
+  "bg-[var(--color-answer-4)] text-white",
 ]
 
 export const ANSWERS_LABELS = ["A", "B", "C", "D"]
